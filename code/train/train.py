@@ -66,6 +66,7 @@ def log_confusion_matrix(cm, labels):
 
 
 def main(args):
+    '''
     # create the outputs folder
     os.makedirs('outputs', exist_ok=True)
 
@@ -114,6 +115,7 @@ def main(args):
     # files saved in the "outputs" folder are automatically uploaded into run history
     model_file_name = "model.pkl"
     joblib.dump(svm_model, os.path.join('outputs', model_file_name))
+    '''
 
 
 def parse_args():
